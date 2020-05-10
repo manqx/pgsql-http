@@ -266,6 +266,13 @@ If you already installed a previous version and you just want to upgrade, then `
 
 There is a build available at [postgresonline](http://www.postgresonline.com/journal/archives/371-http-extension.html), not maintained by me.
 
+### Docker
+
+Add http extension for postgis, run 
+``` bash
+$ docker build -t pgsql-http:12-3.0 . 
+```
+
 ## Why This is a Bad Idea
 
 - "What happens if the web page takes a long time to return?" Your SQL call will just wait there until it does. Make sure your web service fails fast.
